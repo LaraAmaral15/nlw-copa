@@ -178,7 +178,8 @@ header {
 
 .card h2:hover,
 .card ul li strong:hover,
-.card ul li img:hover {
+.card ul li img:hover,
+.button:hover {
   transform: scale(1.1);
 }
 
@@ -186,6 +187,19 @@ header {
 .card ul li strong,
 .card ul li img {
   transition: transform 0.3s;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--card-color-primary);
+  border-radius: 2rem;
 }
 
 @keyframes appear {
