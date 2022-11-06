@@ -26,14 +26,43 @@ function createCard(date, day, games) {
 
 document.querySelector("#cards").innerHTML = 
   createCard( "24/11", "quinta",
-    createGame('brazil', '16:00', 'serbia') +
+    createGame('switzerland', '07:00', 'cameroon') +
+    createGame('uruguay', '10:00', 'korea') +
+    createGame('portugal', '13:00', 'ghana') +
     createGame('brazil', '16:00', 'serbia')
   ) +
 
-  createCard( "24/11", "quinta",
-    createGame('brazil', '13:00', 'cameroon')
+  createCard( "28/11", "segunda",
+    createGame('cameroon', '07:00', 'serbia') +
+    createGame('korea', '10:00', 'ghana') +
+    createGame('brazil', '13:00', 'switzerland') +
+    createGame('portugal', '16:00', 'uruguay') 
   ) +
 
-  createCard( "24/11", "quinta",
-    createGame('brazil', '13:00', 'switzerland')
+  createCard( "02/12", "sexta",
+    createGame('korea', '12:00', 'portugal') +
+    createGame('ghana', '12:00', 'uruguay') +
+    createGame('serbia', '16:00', 'switzerland') +
+    createGame('brazil', '16:00', 'cameroon')
   )
+
+function removeColor() {
+  document.body.classList.remove("yellow")
+  document.body.classList.remove("blue")
+  document.body.classList.remove("green")
+}
+
+function changeColorYellow() {
+  removeColor()
+  document.body.classList.add("yellow")
+}
+
+function changeColorBlue() {
+  removeColor()
+  document.body.classList.add("blue")
+}
+
+function changeColorGreen() {
+  removeColor()
+  document.body.classList.add("green")
+}
